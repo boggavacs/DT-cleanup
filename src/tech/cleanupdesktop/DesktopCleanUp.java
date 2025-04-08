@@ -1,9 +1,12 @@
 package tech.cleanupdesktop;
 
+import java.io.File;
+
 public class DesktopCleanUp {
 	private String osName;
 	private String osVersion;
 	private String path;
+	private File[] rootPath;
 	
 	/**
 	 * @return the osName
@@ -41,6 +44,19 @@ public class DesktopCleanUp {
 	public String setPath(String path) {
 		return this.path = path;
 	}
+	/**
+	 * @return the rootPath
+	 */
+	public File[] getRootPath() {
+		return rootPath;
+	}
+	/**
+	 * @param rootPath the rootPath to set
+	 */
+	public void setRootPath(File[] rootPath) {
+		this.rootPath = rootPath;
+	}
+	
 	
 	
 }

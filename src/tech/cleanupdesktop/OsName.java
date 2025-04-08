@@ -1,5 +1,7 @@
 package tech.cleanupdesktop;
 
 public interface OsName {
-	String getOsName(String name);
+	
+	public String osName(String name);
+
 }
